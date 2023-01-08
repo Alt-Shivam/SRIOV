@@ -28,7 +28,11 @@ in my case
 ### Put no of VFs in the following command.
 
 Put options [NAME_OF_DRIVER] max_vfs=2 to /etc/modprobe.d/[NAME_OF_DRIVER].conf
+
+
 eg `echo "ixgbe max_vfs=22 >> /etc/modprobe.d/ixgbe.conf`
 
 ### Regenerate initramfs
 Run: `update-initramfs -u`
+
+## Now we're ready with our VFs which can be easily assigned to VMs
