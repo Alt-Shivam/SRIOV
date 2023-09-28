@@ -35,4 +35,8 @@ eg `echo "ixgbe max_vfs=22 >> /etc/modprobe.d/ixgbe.conf`
 ### Regenerate initramfs
 Run: `update-initramfs -u`
 
+# Create vfs via echo command
+```bash
+echo "4" > /sys/bus/pci/devices/0000\:65\:00.0/sriov_numvfs
+```
 ## Now we're ready with our VFs which can be easily assigned to VMs
